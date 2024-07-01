@@ -1,0 +1,101 @@
+.rhap_container {
+  background-color: transparent;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.rhap_container.audio-disable {
+  opacity: 0.2;
+}
+
+.rhap_container .rhap_button-clear.rhap_main-controls-button.rhap_skip-button {
+  opacity: 0.4;
+}
+
+.rhap_container
+  .rhap_button-clear.rhap_main-controls-button.rhap_skip-button:hover:not(
+    [disabled]
+  ) {
+  opacity: 1;
+}
+
+.rhap_container .rhap_button-clear.rhap_volume-button {
+  color: white;
+}
+
+.rhap_container .rhap_volume-indicator {
+  background-color: white;
+}
+
+.rhap_container
+  .rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button,
+.rhap_container .rhap_volume-container,
+.rhap_container .rhap_button-clear.rhap_repeat-button {
+  transition: all 200ms linear;
+  opacity: 0.4;
+  color: white;
+}
+
+.rhap_container
+  .rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button:hover:not(
+    [disabled]
+  ),
+.rhap_container .rhap_volume-container:hover:not([disabled]),
+.rhap_container .rhap_button-clear.rhap_repeat-button:hover:not([disabled]) {
+  opacity: 1;
+}
+
+.rhap_progress-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'progressbar progressbar'
+    'currenttime duration';
+}
+
+.rhap_progress-section .rhap_progress-container {
+  grid-area: progressbar;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.rhap_progress-container .rhap_progress-indicator {
+  background-color: white;
+}
+
+.rhap_progress-filled {
+  background-color: white;
+}
+
+.rhap_download-progress {
+  background-color: white;
+  opacity: 0.4;
+}
+
+.rhap_progress-indicator {
+  transform: scale(0.7);
+  transform-origin: center;
+}
+
+.rhap_progress-section .rhap_current-time {
+  grid-area: currenttime;
+  padding: 0 10px;
+  color: white;
+}
+
+.rhap_progress-section .rhap_total-time {
+  grid-area: duration;
+  padding: 0 10px;
+  justify-self: end;
+  color: white;
+}
+
+.audio-player-container .cover-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}

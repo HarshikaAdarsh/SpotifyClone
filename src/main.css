@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.music-list-container::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.link-wrapper a {
+  color: #fff;
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.link-wrapper a div.link-text-wrapper span {
+  font-size: 1.25rem;
+}
+
+.link-wrapper a.active div.link-text-wrapper {
+  opacity: 1;
+}
+
+.music-list-nav-wrap a {
+  text-decoration: none;
+  color: white;
+}
+
+.music-list-nav-wrap a.active h6 {
+  opacity: 1;
+}
